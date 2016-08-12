@@ -26,16 +26,16 @@ require(__DIR__ . DS . 'models' . DS . 'category.php');
  */
 class MorevirtuemartController extends JControllerLegacy
 {
-	public function __construct() 
-	{
-		parent::__construct();
+  public function __construct() 
+  {
+    parent::__construct();
 
-		$this->categoryModel = new VirtueMartModelCategoryLocal();
-	}
+    $this->categoryModel = new VirtueMartModelCategoryLocal();
+  }
 
-	public function createCategory ()
-	{
-		$catData = [
+  public function createCategory ()
+  {
+    $catData = [
       'category_name' => 'Brand new Virtuemart category',
       'category_parent_id' => 0,
       'published' => 0
@@ -48,5 +48,5 @@ class MorevirtuemartController extends JControllerLegacy
     echo 'Created a new category';
 
     die();
-	}
+  }
 }
